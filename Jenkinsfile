@@ -2,8 +2,8 @@ pipeline{
     agent any
 
     stages{
-         agent{
-            docker{
+         agent {
+            docker {
                 image 'maven'
             }
         }
