@@ -2,6 +2,11 @@ pipeline{
     agent any
 
     stages{
+         agent{
+            docker{
+                image 'maven'
+            }
+        }
         stage('COMPILE'){
              steps{
                 script{
